@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WanzyxXx Dev Studio | Jasa Dev SAMP, Roblox, Web & Scripting</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Orbitron & Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neonPurple: '#c084fc',
+            neonViolet: '#a855f7',
+            deepSpace: '#070010',
+          },
+          fontFamily: {
+            heading: ['Orbitron', 'sans-serif'],
+            body: ['Rajdhani', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="relative min-h-screen text-purple-100">
+
+  <!-- Background Overlay & Cyber Grid -->
+  <div class="cyber-bg-overlay"></div>
+  <div class="cyber-grid"></div>
+
+  <!-- Background Kupu-Kupu Glow Bergerak -->
+  <div class="butterfly-container">
+    <div class="butterfly">🦋</div>
+    <div class="butterfly">🦋</div>
+    <div class="butterfly">🦋</div>
+    <div class="butterfly">🦋</div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="relative z-30 flex items-center justify-between px-6 lg:px-16 py-4 border-b border-purple-900/40 backdrop-blur-xl bg-black/40 sticky top-0">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-purple-600/30 border border-purple-500/50 flex items-center justify-center text-purple-300 shadow-lg shadow-purple-500/30">
+        <i data-lucide="code-2" class="w-6 h-6"></i>
+      </div>
+      <div>
+        <h1 class="text-2xl font-black font-heading tracking-wider bg-gradient-to-r from-purple-300 via-fuchsia-300 to-indigo-400 bg-clip-text text-transparent glow-title">
+          WANZYXXX
+        </h1>
+        <span class="text-[10px] tracking-widest text-purple-400 font-bold uppercase block -mt-1">DEV STUDIO & SCRIPT STORE</span>
+      </div>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8 font-semibold text-base text-purple-200">
+      <a href="#services" class="hover:text-purple-400 transition">Katalog Layanan</a>
+      <a href="#showcase" class="hover:text-purple-400 transition">Portofolio Slide</a>
+      <a href="#payment" class="hover:text-purple-400 transition">Payment</a>
+      <a href="#faq" class="hover:text-purple-400 transition">FAQ</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="#services" class="px-5 py-2.5 rounded-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 transition shadow-lg shadow-purple-600/30 flex items-center gap-2 text-sm text-white">
+        <i data-lucide="zap" class="w-4 h-4"></i> Order Jasa
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative z-10 text-center px-6 pt-16 pb-20 max-w-5xl mx-auto">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple-500/40 bg-purple-950/60 text-purple-300 text-xs md:text-sm font-semibold mb-6 shadow-inner shadow-purple-500/20">
+      <span>✨ Solusi Scripting & Dev Game / Web Terlengkap 2026</span>
+    </div>
+    
+    <h2 class="text-3xl md:text-6xl font-black font-heading leading-tight tracking-wider mb-6 glow-title">
+      JASA DEV <span class="text-purple-400">SAMP</span>, <span class="text-indigo-400">ROBLOX</span>, & <span class="text-fuchsia-400">WEBSITE</span>
+    </h2>
+
+    <p class="text-base md:text-xl text-purple-200/80 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+      Penyedia script Pawn SAMP, Lua Script Roblox Studio, serta Pembuatan Website Modern otomatis yang siap dijalankan di GitHub Pages & Custom Domain sendiri dengan pembayaran otomatis SociaBuzz.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#showcase" class="px-8 py-3.5 rounded-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 transition shadow-lg shadow-purple-600/30 flex items-center gap-2 text-white">
+        <i data-lucide="eye" class="w-5 h-5"></i> Lihat Bukti Slide Foto
+      </a>
+      <a href="#services" class="px-8 py-3.5 rounded-xl font-bold bg-purple-950/70 border border-purple-500/50 hover:bg-purple-900/50 transition flex items-center gap-2 text-purple-200">
+        <i data-lucide="shopping-bag" class="w-5 h-5"></i> Pilih Paket Layanan
+      </a>
+    </div>
+  </header>
+
+  <!-- 3-Slide Photo Showcase -->
+  <section id="showcase" class="relative z-10 py-12 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl md:text-4xl font-extrabold font-heading glow-text mb-2">LIVE PROJECT SHOWCASE</h3>
+      <p class="text-purple-300/80 text-sm md:text-base">Geser slide untuk melihat preview pengerjaan SAMP, Roblox, dan Website</p>
+    </div>
+
+    <!-- Carousel Box -->
+    <div class="relative glow-box p-3 md:p-5 rounded-3xl">
+      <div id="sliderWrapper" class="overflow-hidden rounded-2xl relative h-[420px] md:h-[480px]">
+        
+        <!-- Slide 1: SAMP -->
+        <div class="slide active absolute inset-0 flex flex-col justify-end p-6 md:p-10 bg-cover bg-center" 
+             style="background-image: linear-gradient(to top, rgba(8, 0, 16, 0.96) 15%, rgba(8, 0, 16, 0.4) 60%, rgba(8, 0, 16, 0.1)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80');">
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider">Slide 1 : SAMP Scripting</span>
+              <span class="bg-purple-900/80 text-purple-300 text-xs px-2.5 py-1 rounded border border-purple-500/40">Pawn / MySQL / Textdraw</span>
+            </div>
+            <h4 class="text-2xl md:text-3xl font-bold font-heading mb-2 text-white">San Andreas Multiplayer (SAMP)</h4>
+            <p class="text-purple-200/90 text-sm md:text-base mb-4 leading-relaxed">
+              Pembuatan gamemode Roleplay/Deathmatch, perbaikan bug script, custom mapping realistis, UCP register launcher, dan optimasi database in-game.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <button onclick="openOrderModal('SAMP - Gamemode & Pawn Scripting')" class="px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 font-bold text-sm flex items-center gap-2 transition text-white shadow-md shadow-purple-600/40">
+                <i data-lucide="terminal" class="w-4 h-4"></i> Order SAMP Dev
+              </button>
+              <a href="#services" class="px-5 py-2.5 rounded-xl bg-purple-950/80 border border-purple-500/40 hover:bg-purple-900/50 text-sm font-bold transition">
+                Lihat Semua Script SAMP
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Roblox -->
+        <div class="slide inactive absolute inset-0 flex flex-col justify-end p-6 md:p-10 bg-cover bg-center" 
+             style="background-image: linear-gradient(to top, rgba(8, 0, 16, 0.96) 15%, rgba(8, 0, 16, 0.4) 60%, rgba(8, 0, 16, 0.1)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80');">
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider">Slide 2 : Roblox Studio Dev</span>
+              <span class="bg-indigo-900/80 text-indigo-300 text-xs px-2.5 py-1 rounded border border-indigo-500/40">Lua / GUI / DataStore</span>
+            </div>
+            <h4 class="text-2xl md:text-3xl font-bold font-heading mb-2 text-white">Roblox Game & Script Development</h4>
+            <p class="text-purple-200/90 text-sm md:text-base mb-4 leading-relaxed">
+              Layanan pembuatan gameplay Roblox Studio: RPG, Simulator, Obby, Tycoon, custom sistem save/load player anti data loss, serta pembuatan custom GUI & Tool animatif.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <button onclick="openOrderModal('Roblox - Custom Lua Script & Mechanics')" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-bold text-sm flex items-center gap-2 transition text-white shadow-md shadow-indigo-600/40">
+                <i data-lucide="gamepad-2" class="w-4 h-4"></i> Order Roblox Dev
+              </button>
+              <a href="#services" class="px-5 py-2.5 rounded-xl bg-purple-950/80 border border-purple-500/40 hover:bg-purple-900/50 text-sm font-bold transition">
+                Lihat Fitur Roblox
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Website Creation -->
+        <div class="slide inactive absolute inset-0 flex flex-col justify-end p-6 md:p-10 bg-cover bg-center" 
+             style="background-image: linear-gradient(to top, rgba(8, 0, 16, 0.96) 15%, rgba(8, 0, 16, 0.4) 60%, rgba(8, 0, 16, 0.1)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80');">
+          <div class="max-w-2xl">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-fuchsia-600 text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider">Slide 3 : Website Creation</span>
+              <span class="bg-fuchsia-900/80 text-fuchsia-300 text-xs px-2.5 py-1 rounded border border-fuchsia-500/40">GitHub Pages / Custom Domain</span>
+            </div>
+            <h4 class="text-2xl md:text-3xl font-bold font-heading mb-2 text-white">Create Modern Website & Store</h4>
+            <p class="text-purple-200/90 text-sm md:text-base mb-4 leading-relaxed">
+              Jasa pembuatan website profesional, toko online jasa digital, landing page portofolio, support payment otomatis SociaBuzz, dan panduan pasang domain sendiri (.com / .id / .my.id).
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <button onclick="openOrderModal('Web - Landing Page & Portofolio Ready GitHub')" class="px-5 py-2.5 rounded-xl bg-fuchsia-600 hover:bg-fuchsia-500 font-bold text-sm flex items-center gap-2 transition text-white shadow-md shadow-fuchsia-600/40">
+                <i data-lucide="globe" class="w-4 h-4"></i> Order Website
+              </button>
+              <a href="#services" class="px-5 py-2.5 rounded-xl bg-purple-950/80 border border-purple-500/40 hover:bg-purple-900/50 text-sm font-bold transition">
+                Cek Paket Web
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Navigation Controls -->
+      <button onclick="prevSlide()" class="absolute left-6 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/60 border border-purple-500/50 hover:bg-purple-600 text-white transition backdrop-blur-md">
+        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      </button>
+      <button onclick="nextSlide()" class="absolute right-6 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/60 border border-purple-500/50 hover:bg-purple-600 text-white transition backdrop-blur-md">
+        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Carousel Dots Indicators -->
+      <div class="flex justify-center items-center gap-3 mt-4">
+        <button onclick="goToSlide(0)" class="dot-btn w-8 h-2 rounded-full bg-purple-400 transition-all duration-300"></button>
+        <button onclick="goToSlide(1)" class="dot-btn w-3 h-2 rounded-full bg-purple-950/80 border border-purple-800 transition-all duration-300"></button>
+        <button onclick="goToSlide(2)" class="dot-btn w-3 h-2 rounded-full bg-purple-950/80 border border-purple-800 transition-all duration-300"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Packages Grid -->
+  <section id="services" class="relative z-10 py-16 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h3 class="text-3xl md:text-4xl font-black font-heading glow-title mb-3">KATALOG LAYANAN LENGKAP</h3>
+      <p class="text-purple-300/80 max-w-xl mx-auto">Semua yang bersangkutan dengan scripting dan sistem SAMP, Roblox, dan Web ada di sini.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Group 1: Jasa SAMP -->
+      <div class="glow-box rounded-2xl p-6 flex flex-col justify-between border-purple-500/40">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="p-3 rounded-xl bg-purple-600/30 text-purple-300 border border-purple-500/50">
+              <i data-lucide="terminal" class="w-6 h-6"></i>
+            </span>
+            <span class="text-xs px-2.5 py-1 rounded bg-purple-900/60 border border-purple-500/30 font-bold uppercase tracking-wider text-purple-300">Pawn Script</span>
+          </div>
+          <h4 class="text-2xl font-bold font-heading mb-2">Jasa Dev SAMP</h4>
+          <p class="text-purple-300/70 text-sm mb-4">Layanan script server GTA SAMP (San Andreas Multiplayer) profesional.</p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Pawn Script & Bug Fixing</p>
+                <p class="text-xs text-purple-400">Fix error, compile, logic code</p>
+              </div>
+              <button onclick="openOrderModal('SAMP - Gamemode & Pawn Scripting')" class="text-xs px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 font-bold transition">Pilih</button>
+            </div>
+
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Custom Mapping & Textdraw</p>
+                <p class="text-xs text-purple-400">In-game dynamic HUD & mapping</p>
+              </div>
+              <button onclick="openOrderModal('SAMP - Custom Mapping & Textdraw')" class="text-xs px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 font-bold transition">Pilih</button>
+            </div>
+
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Full Server Setup & UCP</p>
+                <p class="text-xs text-purple-400">Database MySQL + Anti Cheat</p>
+              </div>
+              <button onclick="openOrderModal('SAMP - Full Server Setup + AntiCheat')" class="text-xs px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 font-bold transition">Pilih</button>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="openOrderModal('SAMP - Gamemode & Pawn Scripting')" class="w-full py-3 rounded-xl bg-purple-600/90 hover:bg-purple-500 font-bold font-heading tracking-wider transition text-white">
+          ORDER JASA SAMP
+        </button>
+      </div>
+
+      <!-- Group 2: Jasa Roblox -->
+      <div class="glow-box rounded-2xl p-6 flex flex-col justify-between border-indigo-500/40">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="p-3 rounded-xl bg-indigo-600/30 text-indigo-300 border border-indigo-500/50">
+              <i data-lucide="gamepad-2" class="w-6 h-6"></i>
+            </span>
+            <span class="text-xs px-2.5 py-1 rounded bg-indigo-900/60 border border-indigo-500/30 font-bold uppercase tracking-wider text-indigo-300">Lua Script</span>
+          </div>
+          <h4 class="text-2xl font-bold font-heading mb-2">Jasa Dev Roblox</h4>
+          <p class="text-purple-300/70 text-sm mb-4">Pengembangan game Roblox Studio interaktif, custom sistem, dan optimasi.</p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Custom Lua Script & Tools</p>
+                <p class="text-xs text-indigo-400">Mechanics, animation, inventory</p>
+              </div>
+              <button onclick="openOrderModal('Roblox - Custom Lua Script & Mechanics')" class="text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-bold transition">Pilih</button>
+            </div>
+
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Simulator / Tycoon / RPG</p>
+                <p class="text-xs text-indigo-400">Full gameplay + DataStore</p>
+              </div>
+              <button onclick="openOrderModal('Roblox - Simulator / Tycoon / RPG Full Game')" class="text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-bold transition">Pilih</button>
+            </div>
+
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Custom GUI & Gamepass</p>
+                <p class="text-xs text-indigo-400">UI Shop, robux monetization</p>
+              </div>
+              <button onclick="openOrderModal('Roblox - Custom GUI & Monetization Gamepass')" class="text-xs px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-bold transition">Pilih</button>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="openOrderModal('Roblox - Custom Lua Script & Mechanics')" class="w-full py-3 rounded-xl bg-indigo-600/90 hover:bg-indigo-500 font-bold font-heading tracking-wider transition text-white">
+          ORDER JASA ROBLOX
+        </button>
+      </div>
+
+      <!-- Group 3: Jasa Create Website -->
+      <div class="glow-box rounded-2xl p-6 flex flex-col justify-between border-fuchsia-500/40">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="p-3 rounded-xl bg-fuchsia-600/30 text-fuchsia-300 border border-fuchsia-500/50">
+              <i data-lucide="layout" class="w-6 h-6"></i>
+            </span>
+            <span class="text-xs px-2.5 py-1 rounded bg-fuchsia-900/60 border border-fuchsia-500/30 font-bold uppercase tracking-wider text-fuchsia-300">Web Dev</span>
+          </div>
+          <h4 class="text-2xl font-bold font-heading mb-2">Jasa Create Web</h4>
+          <p class="text-purple-300/70 text-sm mb-4">Website modern responsive, siap GitHub Pages dan Custom Domain.</p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Web Landing Page / Portofolio</p>
+                <p class="text-xs text-fuchsia-400">Gratis hosting GitHub Pages</p>
+              </div>
+              <button onclick="openOrderModal('Web - Landing Page & Portofolio Ready GitHub')" class="text-xs px-3 py-1.5 rounded-lg bg-fuchsia-600 hover:bg-fuchsia-500 font-bold transition">Pilih</button>
+            </div>
+
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Web Store Jasa & Domain</p>
+                <p class="text-xs text-fuchsia-400">Setup domain .com / .id / .my.id</p>
+              </div>
+              <button onclick="openOrderModal('Web - Topup / Jasa Web Store + Domain Sendiri')" class="text-xs px-3 py-1.5 rounded-lg bg-fuchsia-600 hover:bg-fuchsia-500 font-bold transition">Pilih</button>
+            </div>
+
+            <div class="p-3 rounded-xl bg-black/40 border border-purple-900/60 flex justify-between items-center">
+              <div>
+                <p class="font-bold text-sm">Integrasi Payment SociaBuzz</p>
+                <p class="text-xs text-fuchsia-400">QRIS, E-Wallet, & Virtual Account</p>
+              </div>
+              <button onclick="openOrderModal('Web - Full Custom Script & Dashboard')" class="text-xs px-3 py-1.5 rounded-lg bg-fuchsia-600 hover:bg-fuchsia-500 font-bold transition">Pilih</button>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="openOrderModal('Web - Landing Page & Portofolio Ready GitHub')" class="w-full py-3 rounded-xl bg-fuchsia-600/90 hover:bg-fuchsia-500 font-bold font-heading tracking-wider transition text-white">
+          ORDER JASA WEB
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Payment SociaBuzz Info -->
+  <section id="payment" class="relative z-10 py-12 px-6 max-w-5xl mx-auto">
+    <div class="glow-box rounded-3xl p-8 md:p-12 bg-gradient-to-b from-purple-950/40 to-[#0b001a]/90">
+      <div class="text-center mb-8">
+        <span class="px-3 py-1 rounded bg-purple-800/50 text-purple-300 text-xs font-bold uppercase tracking-wider mb-3 inline-block">SociaBuzz Payment Gateway</span>
+        <h3 class="text-3xl md:text-4xl font-black font-heading glow-text mb-3">PEMBAYARAN OTOMATIS SOCIABUZZ</h3>
+        <p class="text-purple-300/80 max-w-xl mx-auto text-sm md:text-base">Mendukung semua pembayaran lokal secara otomatis melalui tautan checkout resmi SociaBuzz.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+        <div class="p-4 rounded-xl bg-purple-900/20 border border-purple-800/40">
+          <div class="text-2xl mb-1">📱</div>
+          <p class="font-bold text-sm">QRIS All Payment</p>
+          <span class="text-[11px] text-purple-400">DANA, Gopay, OVO, Shopee</span>
+        </div>
+        <div class="p-4 rounded-xl bg-purple-900/20 border border-purple-800/40">
+          <div class="text-2xl mb-1">🏦</div>
+          <p class="font-bold text-sm">Virtual Account</p>
+          <span class="text-[11px] text-purple-400">BCA, Mandiri, BRI, BNI</span>
+        </div>
+        <div class="p-4 rounded-xl bg-purple-900/20 border border-purple-800/40">
+          <div class="text-2xl mb-1">⚡</div>
+          <p class="font-bold text-sm">Instan SociaBuzz</p>
+          <span class="text-[11px] text-purple-400">Verifikasi langsung</span>
+        </div>
+        <div class="p-4 rounded-xl bg-purple-900/20 border border-purple-800/40">
+          <div class="text-2xl mb-1">🛡️</div>
+          <p class="font-bold text-sm">Konfirmasi WA</p>
+          <span class="text-[11px] text-purple-400">Fast response 24/7</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="relative z-10 py-12 px-6 max-w-4xl mx-auto">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl md:text-3xl font-bold font-heading glow-text mb-2">PANDUAN PEMESANAN</h3>
+      <p class="text-purple-300/80 text-sm">Cara mudah bertransaksi menggunakan SociaBuzz</p>
+    </div>
+
+    <div class="space-y-4">
+      <div class="glow-box p-5 rounded-xl">
+        <h5 class="font-bold text-base text-purple-200 mb-1 flex items-center gap-2">
+          <i data-lucide="help-circle" class="w-4 h-4 text-purple-400"></i> Bagaimana alur pemesanan dengan SociaBuzz?
+        </h5>
+        <p class="text-sm text-purple-300/80 leading-relaxed">
+          1. Klik tombol Order dan isi identitas serta request script Anda.<br>
+          2. Klik tombol "Bayar Lewat SociaBuzz", pilih metode bayar (QRIS/E-Wallet/Bank) di halaman SociaBuzz.<br>
+          3. Setelah bayar, tekan tombol hijau untuk konfirmasi ke WhatsApp Admin dan kirimkan bukti pembayarannya!
+        </p>
+      </div>
+
+      <div class="glow-box p-5 rounded-xl">
+        <h5 class="font-bold text-base text-purple-200 mb-1 flex items-center gap-2">
+          <i data-lucide="help-circle" class="w-4 h-4 text-purple-400"></i> Apakah website ini bisa langsung jalan di GitHub Pages?
+        </h5>
+        <p class="text-sm text-purple-300/80 leading-relaxed">
+          Ya, 100% bisa! Website ini dibuat statis & modern tanpa backend rumit sehingga Anda tinggal upload file ke repository GitHub Anda dan aktifkan fitur GitHub Pages.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Modal Order & SociaBuzz Payment (2-Step Flow) -->
+  <div id="orderModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-[#0f021e] border border-purple-500/70 rounded-2xl max-w-lg w-full p-6 glow-box relative overflow-hidden">
+      
+      <!-- Tombol Close Modal -->
+      <button onclick="closeOrderModal()" class="absolute right-4 top-4 text-purple-400 hover:text-white transition">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <!-- ================= STEP 1: FORM ORDER ================= -->
+      <div id="modalStep1">
+        <h3 class="text-xl md:text-2xl font-heading font-bold glow-text mb-1 flex items-center gap-2">
+          <i data-lucide="shopping-cart" class="w-6 h-6 text-purple-400"></i> Formulir Pemesanan
+        </h3>
+        <p class="text-xs text-purple-300/80 mb-4">Lengkapi data di bawah untuk melanjutkan ke pembayaran SociaBuzz.</p>
+
+        <form onsubmit="handleProcessToPayment(event)" class="space-y-3.5">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-purple-300 font-semibold mb-1">Nama / Nickname Customer</label>
+            <input type="text" id="custName" required placeholder="Contoh: Wanzy" class="w-full bg-purple-950/40 border border-purple-800/80 rounded-lg px-3.5 py-2 text-sm text-white focus:outline-none focus:border-purple-400" />
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-purple-300 font-semibold mb-1">Nomor WhatsApp / ID Discord</label>
+            <input type="text" id="custContact" required placeholder="Contoh: 081234567890" class="w-full bg-purple-950/40 border border-purple-800/80 rounded-lg px-3.5 py-2 text-sm text-white focus:outline-none focus:border-purple-400" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-purple-300 font-semibold mb-1">Layanan Terpilih</label>
+              <input type="text" id="serviceField" readonly class="w-full bg-purple-900/30 border border-purple-700/60 rounded-lg px-3 py-2 text-xs font-bold text-purple-300" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-purple-300 font-semibold mb-1">Total Biaya</label>
+              <input type="text" id="priceField" readonly class="w-full bg-purple-900/30 border border-purple-700/60 rounded-lg px-3 py-2 text-xs font-bold text-green-400" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-purple-300 font-semibold mb-1">Catatan / Detail Script yang Diminta</label>
+            <textarea id="custNotes" rows="2.5" placeholder="Tuliskan spesifikasi fitur / request khusus script..." class="w-full bg-purple-950/40 border border-purple-800/80 rounded-lg px-3.5 py-2 text-sm text-white focus:outline-none focus:border-purple-400"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3 mt-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 rounded-xl font-bold font-heading tracking-wider uppercase text-white shadow-lg shadow-purple-600/40 flex items-center justify-center gap-2 transition text-sm">
+            <span>Lanjut ke Pembayaran SociaBuzz</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- ================= STEP 2: SOCIABUZZ & AUTO WA ================= -->
+      <div id="modalStep2" class="hidden text-center">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-900/60 border border-purple-500/40 text-purple-300 text-xs font-semibold mb-3">
+          <i data-lucide="credit-card" class="w-3.5 h-3.5"></i> Pembayaran SociaBuzz
+        </div>
+        
+        <h3 class="text-xl font-heading font-bold glow-text mb-1">BAYAR DENGAN SOCIABUZZ</h3>
+        <p class="text-xs text-purple-300/80 mb-4">Mendukung QRIS instan, GoPay, OVO, DANA, ShopeePay, serta Transfer Virtual Account Bank.</p>
+
+        <!-- Detail Invoice Mini -->
+        <div class="bg-black/50 border border-purple-900/80 rounded-xl p-3.5 text-left text-xs space-y-1.5 mb-4">
+          <div class="flex justify-between"><span class="text-purple-400">Invoice:</span><span id="displayInvoice" class="font-bold text-purple-200">SBZ-000000</span></div>
+          <div class="flex justify-between"><span class="text-purple-400">Customer:</span><span id="displayCustomer" class="font-bold text-white">-</span></div>
+          <div class="flex justify-between"><span class="text-purple-400">Layanan:</span><span id="displayService" class="font-bold text-white">-</span></div>
+          <div class="flex justify-between border-t border-purple-900/60 pt-1.5 mt-1.5"><span class="text-purple-300 font-semibold">Total Tagihan:</span><span id="displayPrice" class="font-bold text-green-400 text-sm">Rp 0</span></div>
+        </div>
+
+        <!-- Tombol Bayar SociaBuzz -->
+        <button onclick="openSociaBuzzPayment()" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 rounded-xl font-bold font-heading tracking-wider uppercase text-white shadow-lg shadow-orange-600/30 flex items-center justify-center gap-2 transition text-sm mb-4">
+          <i data-lucide="external-link" class="w-4 h-4"></i> KLIK UNTUK BAYAR DI SOCIABUZZ
+        </button>
+
+        <div class="bg-purple-950/60 border border-purple-600/40 rounded-xl p-3 mb-4 text-xs text-purple-200 text-left flex items-start gap-2.5">
+          <i data-lucide="info" class="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5"></i>
+          <div>
+            <strong class="text-purple-300">Setelah Bayar di SociaBuzz:</strong><br>
+            Klik tombol hijau di bawah ini untuk membuka WhatsApp admin, lalu kirimkan screenshot bukti transaksi SociaBuzz agar langsung dikerjakan!
+          </div>
+        </div>
+
+        <!-- Tombol Konfirmasi WhatsApp -->
+        <div class="space-y-2">
+          <button onclick="sendConfirmationToWhatsApp()" class="w-full py-3.5 bg-green-600 hover:bg-green-500 rounded-xl font-bold font-heading tracking-wider uppercase text-white shadow-lg shadow-green-600/30 flex items-center justify-center gap-2 transition text-sm">
+            <i data-lucide="message-circle" class="w-5 h-5"></i> SAYA SUDAH BAYAR (KIRIM BUKTI WA)
+          </button>
+          
+          <button onclick="backToStep1()" class="text-xs text-purple-400 hover:text-purple-200 transition py-1">
+            ← Ubah Data Pesanan
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-purple-900/40 py-8 px-6 text-center text-xs md:text-sm text-purple-400/80">
+    <p class="font-semibold mb-1">© 2026 WanzyxXx Dev Studio & Script Store. All rights reserved.</p>
+    <p class="text-[11px] text-purple-500">Fully optimized for GitHub Pages, Custom Domain & SociaBuzz Payment.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
